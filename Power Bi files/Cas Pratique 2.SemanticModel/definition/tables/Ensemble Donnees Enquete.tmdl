@@ -1,0 +1,283 @@
+table 'Ensemble Donnees Enquete'
+	lineageTag: 48002cc4-dc01-43fe-b4e7-729da20487f8
+
+	measure Tot_Menage = COUNTROWS('Ensemble Donnees Enquete' ) / 955
+		formatString: 0%;-0%;0%
+		lineageTag: 565d32eb-ba4b-452a-9767-0b4a89fe6a9f
+
+	column Province
+		dataType: string
+		lineageTag: fddb3139-e326-4172-809e-d0304d7256b9
+		summarizeBy: none
+		sourceColumn: Province
+
+		annotation SummarizationSetBy = Automatic
+
+	column Territoire
+		dataType: string
+		lineageTag: b5cab483-9b77-4e1a-b5fb-7fd55ed82e4b
+		summarizeBy: none
+		sourceColumn: Territoire
+
+		annotation SummarizationSetBy = Automatic
+
+	column Zonedesanté
+		dataType: string
+		lineageTag: 9f2b1051-d07f-44d3-9c13-997d7641b3d0
+		summarizeBy: none
+		sourceColumn: Zonedesanté
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sexe_Repondant
+		dataType: string
+		lineageTag: 015c2722-dc07-4d6f-a1e1-b0071bd6b10e
+		summarizeBy: none
+		sourceColumn: Sexe_Repondant
+
+		annotation SummarizationSetBy = Automatic
+
+	column Etes_vous_chef_de_ménage
+		dataType: string
+		lineageTag: a76bf33a-099d-4b20-a2b2-53c8882b11fe
+		summarizeBy: none
+		sourceColumn: Etes_vous_chef_de_ménage
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q2Etes_vous_enceinte
+		dataType: string
+		lineageTag: 3ff908a8-9fdd-47b4-a9a0-178b5e2f3a60
+		summarizeBy: none
+		sourceColumn: Q2Etes_vous_enceinte
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q3Etes_vous_allaitantes
+		dataType: string
+		lineageTag: 1cab3bc4-da14-48be-95e3-c5cafd94787f
+		summarizeBy: none
+		sourceColumn: Q3Etes_vous_allaitantes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q4Age_répondante
+		dataType: int64
+		formatString: 0
+		lineageTag: f353b59f-a5c8-401b-a2d2-23fa17e7f515
+		summarizeBy: sum
+		sourceColumn: Q4Age_répondante
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q5Etat_civil_du_chef_ménage
+		dataType: string
+		lineageTag: 3c75db87-5d4c-4acd-abfb-dbbc383d2ea5
+		summarizeBy: none
+		sourceColumn: Q5Etat_civil_du_chef_ménage
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q7Niveau_instruction
+		dataType: string
+		lineageTag: 6ba3d888-1a78-4071-be60-c68f1d12ede7
+		summarizeBy: none
+		sourceColumn: Q7Niveau_instruction
+
+		annotation SummarizationSetBy = Automatic
+
+	column Taille_menage
+		dataType: int64
+		formatString: 0
+		lineageTag: 38825d82-5ebd-4780-8a55-2f0bef0bedfc
+		summarizeBy: sum
+		sourceColumn: Taille_menage
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dont_Garçons_(<18 ans)'
+		dataType: int64
+		formatString: 0
+		lineageTag: b1433f7b-b836-49fa-9de3-9719c40778c0
+		summarizeBy: sum
+		sourceColumn: Dont_Garçons_(<18 ans)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dont_Filles (<18 ans)'
+		dataType: int64
+		formatString: 0
+		lineageTag: a9e5f122-0943-4be2-96e9-1798c8bda579
+		summarizeBy: sum
+		sourceColumn: Dont_Filles (<18 ans)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dont_Hommes_de_18_à_59_ans
+		dataType: int64
+		formatString: 0
+		lineageTag: ccba1df3-8371-4247-a4de-bea5df480808
+		summarizeBy: sum
+		sourceColumn: Dont_Hommes_de_18_à_59_ans
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dont_Femmes_de_18_à_59_ans
+		dataType: int64
+		formatString: 0
+		lineageTag: 37d71032-87d1-4a64-b4ab-5ffce62cac30
+		summarizeBy: sum
+		sourceColumn: Dont_Femmes_de_18_à_59_ans
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dont_hommes_de_60_ans_et_plus
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a5617e3-ce3a-4d0c-ab1d-48d2fd5eda08
+		summarizeBy: sum
+		sourceColumn: Dont_hommes_de_60_ans_et_plus
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dont_femmes_de_60_ans_et_plus '
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d87c167-cf45-4b6a-af76-4b49ddacb9fd
+		summarizeBy: sum
+		sourceColumn: "Dont_femmes_de_60_ans_et_plus "
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q10Statut_Répondante
+		dataType: string
+		lineageTag: 79afbdd7-c168-4d5d-8667-0502f4aa1029
+		summarizeBy: none
+		sourceColumn: Q10Statut_Répondante
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q15Satisfaction_processus_ciblage
+		dataType: string
+		lineageTag: 68a56017-14fd-436d-8ab2-28b1c6e5720f
+		summarizeBy: none
+		sourceColumn: Q15Satisfaction_processus_ciblage
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q27Satisfaction_processus_distribution
+		dataType: string
+		lineageTag: 56ff1790-a53c-49d1-bda9-f33f6bffe9de
+		summarizeBy: none
+		sourceColumn: Q27Satisfaction_processus_distribution
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q46Saviez_vous_sil_existe_mécanisme_gestion_plaintes
+		dataType: string
+		lineageTag: f2a8a79f-dbf7-4df1-8022-f236a8247397
+		summarizeBy: none
+		sourceColumn: Q46Saviez_vous_sil_existe_mécanisme_gestion_plaintes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q47Avez_vous_utilisé_le_mécanisme_de_gestion_plaintes
+		dataType: string
+		lineageTag: c01d5a47-a909-490f-94cb-f184198d3f91
+		summarizeBy: none
+		sourceColumn: Q47Avez_vous_utilisé_le_mécanisme_de_gestion_plaintes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q48Si_oui_quel_canal_en_particulier
+		dataType: string
+		lineageTag: 47a98280-8cc7-443b-8f75-469aaf51410f
+		summarizeBy: none
+		sourceColumn: Q48Si_oui_quel_canal_en_particulier
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q48Boîte_à_plaintes
+		dataType: int64
+		formatString: 0
+		lineageTag: d35ad907-db50-41ef-b58a-a644da050f66
+		summarizeBy: sum
+		sourceColumn: Q48Boîte_à_plaintes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q48Bureau_plaintes
+		dataType: int64
+		formatString: 0
+		lineageTag: ea47e55a-180b-4cfb-902e-72eb5d9187f9
+		summarizeBy: sum
+		sourceColumn: Q48Bureau_plaintes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q48Point_focal_ONG
+		dataType: int64
+		formatString: 0
+		lineageTag: ba36e55b-0599-4a02-850d-6670dd7a3bf0
+		summarizeBy: sum
+		sourceColumn: Q48Point_focal_ONG
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q48Chef_de_village
+		dataType: int64
+		formatString: 0
+		lineageTag: 6fe84d14-5a5d-4efd-8bd5-f084d13958c4
+		summarizeBy: sum
+		sourceColumn: Q48Chef_de_village
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q48Numéro_vert
+		dataType: int64
+		formatString: 0
+		lineageTag: 73e59722-e784-4508-a157-2186733b9953
+		summarizeBy: sum
+		sourceColumn: Q48Numéro_vert
+
+		annotation SummarizationSetBy = Automatic
+
+	column Q48Autres
+		dataType: int64
+		formatString: 0
+		lineageTag: f472973c-6a87-4554-b26f-58e7a6639b71
+		summarizeBy: sum
+		sourceColumn: Q48Autres
+
+		annotation SummarizationSetBy = Automatic
+
+	column Autres_B
+		dataType: string
+		lineageTag: c2b0e168-9244-4ed4-87c9-df3dd118a189
+		summarizeBy: none
+		sourceColumn: Autres_B
+
+		annotation SummarizationSetBy = Automatic
+
+	column @_index
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ba2df92-4e1e-4403-a8b7-f176775d1de8
+		summarizeBy: sum
+		sourceColumn: @_index
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Ensemble Donnees Enquete' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\nmako\Music\Test\Ensemble_Donnees_Enquete.xlsx"), null, true),
+				    #"Ensemble Donnees Enquete_Sheet" = Source{[Item="Ensemble Donnees Enquete",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Ensemble Donnees Enquete_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Province", type text}, {"Territoire", type text}, {"Zonedesanté", type text}, {"Sexe_Repondant", type text}, {"Etes_vous_chef_de_ménage", type text}, {"Q2Etes_vous_enceinte", type text}, {"Q3Etes_vous_allaitantes", type text}, {"Q4Age_répondante", Int64.Type}, {"Q5Etat_civil_du_chef_ménage", type text}, {"Q7Niveau_instruction", type text}, {"Taille_menage", Int64.Type}, {"Dont_Garçons_(<18 ans)", Int64.Type}, {"Dont_Filles (<18 ans)", Int64.Type}, {"Dont_Hommes_de_18_à_59_ans", Int64.Type}, {"Dont_Femmes_de_18_à_59_ans", Int64.Type}, {"Dont_hommes_de_60_ans_et_plus", Int64.Type}, {"Dont_femmes_de_60_ans_et_plus ", Int64.Type}, {"Q10Statut_Répondante", type text}, {"Q15Satisfaction_processus_ciblage", type text}, {"Q27Satisfaction_processus_distribution", type text}, {"Q46Saviez_vous_sil_existe_mécanisme_gestion_plaintes", type text}, {"Q47Avez_vous_utilisé_le_mécanisme_de_gestion_plaintes", type text}, {"Q48Si_oui_quel_canal_en_particulier", type text}, {"Q48Boîte_à_plaintes", Int64.Type}, {"Q48Bureau_plaintes", Int64.Type}, {"Q48Point_focal_ONG", Int64.Type}, {"Q48Chef_de_village", Int64.Type}, {"Q48Numéro_vert", Int64.Type}, {"Q48Autres", Int64.Type}, {"Autres_B", type any}, {"@_index", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Cas Pratique 2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e66bbf9d-2595-4b1c-882f-493125ff09e6"
+  }
+}
