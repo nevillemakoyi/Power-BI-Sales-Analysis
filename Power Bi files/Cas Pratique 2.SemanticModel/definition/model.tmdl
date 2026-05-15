@@ -6,13 +6,16 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["Ensemble Donnees Enquete"]
+annotation PBI_QueryOrder = ["Ensemble Donnees Enquete","financials"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table 'Ensemble Donnees Enquete'
+ref table financials
+ref table DateTableTemplate_68a48537-3745-4a2b-a266-da0ea0bebb70
+ref table LocalDateTable_c3518b2a-f80a-42bf-9a62-3e6e09f611ef
 
 ref cultureInfo en-US
 
